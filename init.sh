@@ -5,3 +5,5 @@ sudo /etc/init.d/nginx restart
 #sudo /etc/init.d/gunicorn restart
 #sudo /etc/init.d/mysql start
 
+sudo gunicorn --bind 0.0.0.0:8080 hello:wsgi_application
+
